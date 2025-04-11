@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+// https://mvnrepository.com/artifact/io.cucumber/cucumber-junit
+    testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '7.20.1'
+// https://mvnrepository.com/artifact/io.cucumber/cucumber-java
+    implementation group: 'io.cucumber', name: 'cucumber-java', version: '7.20.1'
+
+// https://mvnrepository.com/artifact/io.rest-assured/rest-assured
+    testImplementation("io.rest-assured:rest-assured:5.5.1")
+
+// https://mvnrepository.com/artifact/org.json/json
+    implementation("org.json:json:20250107")
+// https://mvnrepository.com/artifact/io.rest-assured/json-path
+    implementation("io.rest-assured:json-path:5.5.1")
+// https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator
+    implementation("io.rest-assured:json-schema-validator:5.5.1")
+// https://mvnrepository.com/artifact/org.assertj/assertj-core
+    testImplementation("org.assertj:assertj-core:4.0.0-M1")
+
+// https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    implementation("org.seleniumhq.selenium:selenium-java:4.30.0")
+// https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
+    implementation("io.github.bonigarcia:webdrivermanager:6.0.0")
+//// https://mvnrepository.com/artifact/junit/junit
+//    testImplementation("junit:junit:4.13.2")
+
+}
+
+test {
+    useJUnit()
+
+}
