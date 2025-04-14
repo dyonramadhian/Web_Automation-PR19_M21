@@ -32,8 +32,8 @@ dependencies {
     implementation("org.seleniumhq.selenium:selenium-java:4.30.0")
 // https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
     implementation("io.github.bonigarcia:webdrivermanager:6.0.0")
-//// https://mvnrepository.com/artifact/junit/junit
-//    testImplementation("junit:junit:4.13.2")
+// https://mvnrepository.com/artifact/junit/junit
+    testImplementation("junit:junit:4.13.2")
 
 }
 

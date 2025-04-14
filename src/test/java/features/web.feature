@@ -77,6 +77,7 @@ Feature: Test Automation Web
     And user add item to cart
     And user add item to cart
     And verify cart item is match "2"
+    Then click icon Cart to Your Cart apge
     Then click Checkout button
     And click Continue button
     Then appear error message "Frist Name is required"
