@@ -65,6 +65,9 @@ Feature: Test Automation Web
     And user add item to cart
     And verify cart item is match "4"
     Then click icon Cart to Your Cart apge
+    And remove item from Your Cart page
+    And remove item from Your Cart page
+    Then verify cart item is match "2"
     Then click Checkout button
 
   @web
@@ -80,7 +83,7 @@ Feature: Test Automation Web
     Then click icon Cart to Your Cart apge
     Then click Checkout button
     And click Continue button
-    Then appear error message "Frist Name is required"
+    Then appear error message "First Name is required"
     And input text First Name column
     And click Continue button
     Then  appear error message "Last Name is required"
